@@ -15,7 +15,7 @@ public class DrawLine : MonoBehaviour
 
     void Update()
     {
-        //删除最近一笔2333
+        //删除最近一笔
         if (Input.GetKeyDown(KeyCode.U))
         {
             // U-key means Undo
@@ -25,7 +25,7 @@ public class DrawLine : MonoBehaviour
         if (currentLine == null &&
            Input.GetMouseButton(0))
         {
-            // 鼠标按下，开始画线
+            // 鼠标按下，开始画线2333
             currentLine = Instantiate(linePrefab).GetComponent<LineRenderer>();
             currentLine.name = "Line" + linesDrawn.Count;
             currentLine.transform.parent = transform;
