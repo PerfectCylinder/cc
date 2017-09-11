@@ -15,7 +15,7 @@ public class DrawLine : MonoBehaviour
 
     void Update()
     {
-        //删除最近一笔
+        //删除最近一笔 1
         if (Input.GetKeyDown(KeyCode.U))
         {
             // U-key means Undo
